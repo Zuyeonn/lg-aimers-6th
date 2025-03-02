@@ -11,8 +11,8 @@ def early_stopping_callback(eval_metric='logloss', patience=10):
     return [(X_val, y_val)], {'early_stopping_rounds': patience, 'eval_metric': eval_metric, 'verbose': True}
 
 # 데이터 로드 및 전처리 (ID 컬럼 제거)
-train = pd.read_csv("C:/Users/pc/Downloads/LG_Aimers_Dacon/train.csv").drop(columns=['ID'])
-test = pd.read_csv("C:/Users/pc/Downloads/LG_Aimers_Dacon/test.csv").drop(columns=['ID'])
+train = pd.read_csv("train.csv").drop(columns=['ID'])
+test = pd.read_csv("test.csv").drop(columns=['ID'])
 
 # 학습에 사용할 피처와 타깃 설정 (제외할 컬럼은 제거)
 X = train.drop(columns=['임신 성공 여부', 'PGD 시술 여부', '착상 전 유전 검사 사용 여부', '불임 원인 - 여성 요인', '난자 채취 경과일'], axis=1)
