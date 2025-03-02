@@ -7,8 +7,8 @@ from sklearn.metrics import accuracy_score, roc_auc_score
 # ---------------------------
 # 1) 데이터 불러오기
 # ---------------------------
-train_df = pd.read_csv("C:/Users/pc/Downloads/LG_Aimers_Dacon/train.csv", encoding='utf-8')
-test_df  = pd.read_csv("C:/Users/pc/Downloads/LG_Aimers_Dacon/test.csv", encoding='utf-8')
+train_df = pd.read_csv("train.csv", encoding='utf-8')
+test_df  = pd.read_csv("test.csv", encoding='utf-8')
 sample_submission = pd.read_csv("C:/Users/pc/Downloads/LG_Aimers_Dacon/sample_submission.csv", encoding='utf-8')
 
 # ---------------------------
